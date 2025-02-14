@@ -7,13 +7,12 @@ Data Louna test work
 
 Endpoint 1:
 
-Нужно отобразить массив объектов с двумя минимальными ценами на предмет (одна цена — tradable, другая — нет).
+- [x] Нужно отобразить массив объектов с двумя минимальными ценами на предмет (одна цена — tradable, другая — нет).
 
-Получить данные можно через API: [Skinport API](https://docs.skinport.com/items).
-
-Параметры app_id и currency — default.
-
-В отдачу предметов необходимо добавить кэширование через Redis.
+    - [x] Получить данные можно через API: [Skinport API](https://docs.skinport.com/items).
+        Параметры app_id и currency — default.
+    
+    - [x] В отдачу предметов необходимо добавить кэширование через Redis.
 
 Endpoint 2:
 
