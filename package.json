@@ -6,11 +6,19 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.39.3",
+    "drizzle-typebox": "^0.3.0",
     "elysia": "latest",
-    "ioredis": "^5.5.0"
+    "ioredis": "^5.5.0",
+    "pg": "^8.13.3"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/pg": "^8.11.11",
+    "bun-types": "latest",
+    "drizzle-kit": "^0.30.4",
+    "tsx": "^4.19.2"
   },
   "module": "src/index.js"
 }
