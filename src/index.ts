@@ -48,7 +48,7 @@ app.post('/purchase', async ({ body, set }: { body: Purchase, set: { status: num
       return { message: 'Sorry. Item price is changed' };
     }
     const endProductQuatity = curProduct?.quantity - body?.quantity;
-    if (endProductQuatity >= 0) {
+    if (endProductQuatity < 0) {
       set.status = 203;
       return { message: 'Sorry. Item quantity is not enough' };
     }
