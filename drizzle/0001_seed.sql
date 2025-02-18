@@ -1,4 +1,4 @@
-INSERT INTO "products" ("id", "name", "item_page", "quantity", "currency", "min_price", "created_at", "updated_at") VALUES
+INSERT INTO "products" ("id", "name", "item_page", "quantity", "currency", "price", "created_at", "updated_at") VALUES
 ('prod_001', 'Product 1', 'product1.com', 10, 'EUR', 9.99, NOW(), NOW()),
 ('prod_002', 'Product 2', 'product2.com', 15, 'EUR', 14.99, NOW(), NOW()),
 ('prod_003', 'Product 3', 'product3.com', 20, 'EUR', 19.99, NOW(), NOW()),
