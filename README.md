@@ -1,4 +1,6 @@
 # dataLouna-test
+Elysia, Drizzle, Redis, PostgreSQL
+
 Data Louna test work
 
 📌 Стек: strict TypeScript, фреймворк на выбор: hono/elysia/fastify/express.
