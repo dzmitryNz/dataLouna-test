@@ -37,3 +37,15 @@ Endpoint 2:
 После выполнения пришлите ссылку на репозиторий — мы свяжемся с вами, чтобы обсудить следующий этап. Удачи!
 
 
+
+
+## Improvement proposals
+
+- [ ] Fix `POST /purchase`: use `tx` (not `db`) inside the transaction and make the balance check atomic (`UPDATE ... WHERE balance >= cost` or `SELECT ... FOR UPDATE`).
+- [ ] Use SQL `numeric` for money, not JS floats.
+- [ ] Insert only whitelisted fields, not `...body`.
+- [ ] Return correct status codes (400/409/422 for business errors, 404 for not found) instead of 203/204.
+- [ ] `await` the Redis `set`; add stampede protection for the cache key.
+- [ ] Pin `elysia` and `bun-types` instead of `latest`; add `POSTGRES_URL` to `.env.example`.
+- [ ] Add `bun:test` tests for `/purchase` (insufficient balance, parallel buys).
+- [ ] Add a Dockerfile / docker-compose with Postgres and Redis.
